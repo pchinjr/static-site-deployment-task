@@ -1,0 +1,39 @@
+{
+  "films": [
+    {
+      "title": "Leaving Las Vegas",
+      "year": 1995,
+      "role": "Ben Sanderson",
+      "awards": ["Academy Award — Best Actor"],
+      "image": "https://picsum.photos/seed/leavinglasvegas/600/360"
+    },
+    {
+      "title": "Adaptation",
+      "year": 2002,
+      "role": "Charlie Kaufman / Donald Kaufman",
+      "awards": ["Nominated — Academy Award — Best Supporting Actor"],
+      "image": "https://picsum.photos/seed/adaptation/600/360"
+    },
+    {
+      "title": "Face/Off",
+      "year": 1997,
+      "role": "Sean Archer / Castor Troy",
+      "awards": [],
+      "image": "https://picsum.photos/seed/faceoff/600/360"
+    },
+    {
+      "title": "National Treasure",
+      "year": 2004,
+      "role": "Benjamin Franklin Gates",
+      "awards": [],
+      "image": "https://picsum.photos/seed/nationaltreasure/600/360"
+    },
+    {
+      "title": "Moonstruck",
+      "year": 1987,
+      "role": "Ronny Cammareri",
+      "awards": ["Nominated — Golden Globe — Best Actor"],
+      "image": "https://picsum.photos/seed/moonstruck/600/360"
+    }
+  ]
+}

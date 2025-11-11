@@ -1,0 +1,57 @@
+/* Simple responsive CSS for the fan page */
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#ffcc00;
+  --glass: rgba(255,255,255,0.03);
+  --glass-2: rgba(255,255,255,0.02);
+}
+*{box-sizing:border-box}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.5;margin:0;background:radial-gradient(1200px 400px at 10% 10%, rgba(255,204,0,0.03), transparent), linear-gradient(180deg,#07101a 0%, #081620 100%);color:#e6eef6}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+.site-header{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,0.03)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.brand{font-size:1.25rem;margin:0;padding:0.6rem 0;font-weight:700;letter-spacing:0.2px}
+.main-nav{display:flex;gap:0.75rem}
+.nav-link{color:var(--muted);text-decoration:none;padding:0.5rem;border-radius:8px;font-weight:600}
+.nav-link:hover{background:rgba(255,255,255,0.02);color:#fff}
+.hero{padding:3.5rem 0;text-align:left;display:grid;grid-template-columns:1fr 360px;gap:1.25rem;align-items:center}
+.hero h2{margin:0 0 0.5rem;font-size:2rem}
+.hero p{color:var(--muted);max-width:62ch}
+.cta-row{margin-top:1rem}
+.btn{display:inline-block;padding:0.6rem 1rem;background:var(--accent);color:#08101b;border-radius:8px;text-decoration:none;font-weight:700}
+.btn.outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent);margin-left:0.5rem}
+.quick-links{margin-top:2rem;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);padding:1rem;border-radius:12px;display:flex;gap:1rem}
+.quick-links h3{margin-top:0}
+.site-footer{padding:1rem 0;margin-top:2rem;border-top:1px solid rgba(255,255,255,0.03);text-align:center}
+.content{padding:1.5rem 0}
+.films-list{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));grid-auto-rows:auto}
+.film{display:block;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);padding:0;border-radius:12px;border:1px solid rgba(255,255,255,0.02);box-shadow:0 6px 18px rgba(2,6,23,0.6);overflow:hidden}
+.film-inner{padding:0.8rem;display:flex;flex-direction:column;gap:0.5rem}
+.thumb{display:block;width:100%;height:160px;object-fit:cover;border-radius:8px}
+.film-body{display:block;min-width:0}
+.film h4{margin:0;font-size:1.05rem}
+.film .meta{color:var(--muted);font-size:0.95rem}
+.awards{margin-top:0.6rem}
+.award{display:inline-block;background:rgba(255,204,0,0.12);color:var(--accent);padding:0.18rem 0.5rem;border-radius:6px;margin-right:0.4rem;font-size:0.85rem}
+.controls{margin:1rem 0;display:flex;gap:0.6rem;align-items:center}
+input[type="text"]{flex:1;padding:0.6rem;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+.note{color:var(--muted);font-style:italic}
+
+.bio-article .bio-hero{display:flex;gap:1rem;align-items:center;margin-bottom:1rem}
+.profile{width:160px;height:160px;object-fit:cover;border-radius:12px;border:4px solid rgba(255,255,255,0.03);box-shadow:0 8px 22px rgba(2,6,23,0.6)}
+
+@media (max-width:880px){
+  .hero{grid-template-columns:1fr;text-align:center}
+  .hero p{margin:0 auto}
+  .bio-article .bio-hero{flex-direction:column;align-items:center;text-align:center}
+}
+
+@media (max-width:520px){
+  .films-list{grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}
+  .thumb{flex:0 0 110px;width:110px;height:66px}
+  .controls{flex-direction:column;align-items:stretch}
+  input[type="text"]{width:100%}
+}
+
